@@ -16,12 +16,7 @@ const Movies = () => {
         // .catch((error) => setErrorMsg(error.message));
     }, []);
   
-    useEffect(() => {
-      fetch("https://api.themoviedb.org/3/movie/550?api_key=234ee242c8d3830476fc82cb685088e1")
-        .then((response) => response.json())
-        .then((data) => setMovies(data))
-        .catch((error) => console.log(error.message));
-    }, []);
+    
     return (
       <div>
         {movies.length > 0 ? (

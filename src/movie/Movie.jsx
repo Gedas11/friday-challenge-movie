@@ -5,8 +5,6 @@ const Movie = ({ name, origin_country }) => {
     <>
       <h4>{name}</h4>
       <h3>{origin_country}</h3>
-      
-      {/* <figcaption>{types || "tipo nera"}</figcaption> */}
     </>
   );
 };
